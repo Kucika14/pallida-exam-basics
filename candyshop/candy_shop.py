@@ -18,8 +18,7 @@
 # "Inventory: 3 candies, 2 lollipops, Income: 100, Sugar: 400gr"
 
 class CandyShop:
-    def __init__(self, type, sugar_amount):
-        self.sugar_amount = sugar_amount
+    def __init__(self, type):
         self.type = type
         if type == "lollipop":
             self.price = 10
@@ -32,12 +31,26 @@ class CandyShop:
         return self.type
     
     def create_sweets(self, type):
-        to_create = self.sugar_amount - self.get_type(sugar)
-        self.sugar_amount -= self.get_type(sugar)
+        create = candy_shop.create_sweets
+
+
+class CandyStorage:
+    def __init__(self, candies, sugar_amount):
+        self.candies = []
+        self.sugar_amount
+
+    def add_candies(slef, candy_type):
+        for candy in self.candies:
+            if candy.get_type == "candy"
+        to_create = self.sugar_amount - self.get_type()
+        self.sugar_amount -= self.get_type()
         print(str(self.sugar_amount))
 
-
         
+
+
+
+
 candy_shop = CandyShop(300, 1000)
 candy_shop.create_sweets("candy")
 candy_shop.create_sweets("candy")
