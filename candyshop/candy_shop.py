@@ -17,7 +17,28 @@
 # The CandyShop should be represented as string in this format:
 # "Inventory: 3 candies, 2 lollipops, Income: 100, Sugar: 400gr"
 
-candy_shop = CandyShop(300)
+class CandyShop:
+    def __init__(self, type, sugar_amount):
+        self.sugar_amount = sugar_amount
+        self.type = type
+        if type == "lollipop":
+            self.price = 10
+            self.sugar = 5
+        elif type == "candy":
+            self.price = 20
+            self.sugar = 10
+
+    def get_type(self):
+        return self.type
+    
+    def create_sweets(self, type):
+        to_create = self.sugar_amount - self.get_type(sugar)
+        self.sugar_amount -= self.get_type(sugar)
+        print(str(self.sugar_amount))
+
+
+        
+candy_shop = CandyShop(300, 1000)
 candy_shop.create_sweets("candy")
 candy_shop.create_sweets("candy")
 candy_shop.create_sweets("lollipop")
@@ -26,7 +47,7 @@ print(candy_shop)
 # Should print out:
 # Invetory: 2 candies, 2 lollipops, Income: 0, Sugar: 270gr
 candy_shop.sell("candy", 1)
-print(candy_shop
+print(candy_shop)
 # Should print out:
 # "Invetory: 1 candies, 2 lollipops, Income:20, Sugar: 285gr"
 candy_shop.raise_prices(5)
