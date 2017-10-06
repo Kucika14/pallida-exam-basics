@@ -11,9 +11,9 @@ class AnagramTest(unittest.TestCase):
         my_text = unique_characters("pacal")
         self.assertEqual(my_text, ['p', 'c', 'l'])
     
-    def test_a_string3(self):
-        my_text = unique_characters("malacka")
-        self.assertEqual(my_text, ['m', 'l', 'c', 'k'])
+    def test_empty_string(self):
+        my_text = unique_characters("")
+        self.assertEqual(my_text, "no string given")
 
 
 if __name__ == '__main__':

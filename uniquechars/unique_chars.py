@@ -6,9 +6,11 @@
 
 def unique_characters(string):
     list_of_letters = []
+    if string == "":
+        return "no string given"
     for i in string:
         if i != "a":
-            list_of_letters.append(i)
+            list_of_letters.append(i) 
     return list_of_letters
 
 
