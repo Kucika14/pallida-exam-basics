@@ -15,7 +15,9 @@ class App(object):
         self.start_screen()
 
     def start_screen(self):
-        print(str("here is your fav animals: " + str(self.list_printer())))
+        print(str("here is your fav animals: " + str(self.list_printer()) +
+        'Command line arguments:\n\
+        -add   add new favourite animal'))
 
 
     def check_argument(self):
@@ -63,8 +65,6 @@ class App(object):
         with open("favourites.txt", 'a') as list_of_animals:
             list_of_animals.write(argv[2]+ '\n')
         return self.list_printer()
-    
-    # def run(self):
-    #     self.check_argument()
+
 cli_screen = App()
 cli_screen.check_argument()

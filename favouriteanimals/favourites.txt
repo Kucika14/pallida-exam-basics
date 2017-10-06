@@ -1,11 +1,3 @@
 dog
 cat
-kecske
-kecske
-kecske
-kecske
-kecske
-kecske
-kecske
-kecske
-kecske
+goat
