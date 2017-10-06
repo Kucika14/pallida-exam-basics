@@ -34,6 +34,11 @@ The application is accepted if:
 #### Your answer:
 [add your answer here]
 
+A method is a piece of code that is called by name that is associated with an object. It is implicitly passed for the object for which it was called. It is able to operate on data that is contained within the class.
+A function is a piece of code. It can be passed data to operate on and can optionally return data. All data that is passed to a function is explicitly passed.
+
 ### What is the constructor? When it is used? [2p]
 #### Your answer:
 [add your answer here]
+
+A constructor is a special method of a class or structure in object-oriented programming that initializes an object of that type. A constructor is an instance method that usually has the same name as the class, and can be used to set the values of the members of an object, either to default or to user-defined values.
